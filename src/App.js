@@ -10,10 +10,10 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
     <BrowserRouter>
-      <Navbar
+      <Navbar/>
       <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/product/:id' element={<Details/>}/>
+        <Route path='/' element={<Home/>}></Route>
+        <Route path='/product/:id' element={<Details/>}></Route>
       </Routes>
     </BrowserRouter>
     </QueryClientProvider>
