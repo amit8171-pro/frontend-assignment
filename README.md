@@ -1,48 +1,73 @@
-# Assignment Title: E-commerce Development Task
 
-## Assignment Description:
+# OnlineStore eCommerce Website
 
-In this assignment, you will create a basic e-commerce application using Next.js / React.js. You'll apply key React/Next concepts and fundamental web development skills. Your task is to develop a multi-page web application named "OnlineStore" that allows users to browse and search for products.
+This is an eCommerce website built with React.js. It provides a platform for users to browse and purchase products.
 
-## Instructions:
+## Table of Contents
 
-1. Fork the provided project repository to your profile and clone it to your machine to begin the project.
-2. Design and implement a web application named "OnlineStore" that allows users to browse and search for products.
-3. The application should have the following pages:
-   - Home Page: Display a list of products with their images, names, and prices. Fetch the list from the provided API endpoint.
-   - Search Page: Include a search bar where users can input the name of a product. On form submission, display a list of search results (products) fetched from the API endpoint.
-   - Product Details Page: When a user clicks on a product from the search results or product list, they should be redirected to a page that displays detailed information about the product, including the product image, name, price, and description.
+- [Getting Started](#getting-started)
+- [Project Structure](#project-structure)
+- [Features](#features)
+- [Dependencies](#dependencies)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-You can fetch data using the following API endpoint: https://fakestoreapi.com/
+## Getting Started
 
-## Requirements:
+To run this project locally, follow these steps:
 
-- Use React.js/Next.js to create the web application.
-- Create a visually appealing UI using any CSS framework (like Bootstrap, Tailwind CSS).
-- Use react query (Tanstack query) for fetching and caching the api data.
-- Implement client-side routing to enable smooth transitions between pages.
-- Write clean, maintainable, and well-documented code.
-- Use Git for version control, committing your code regularly to the forked Git repository in your profile.
-- Deploy the application to a hosting platform (e.g., Vercel, Netlify) and provide a live demo URL in your repo and the submission form.
+1. Clone the repository:
 
-### Bonus Points:
+   ```bash
+   git clone https://github.com/amit8171-pro/frontend-assignment.git
+   ```
 
-- Making use of TypeScript for type safety.
-- Use of Next.js is preferred over react
-- Use of global state management with Redux toolkit, Recoil or any other state management library.
-- Implement a responsive UI to improve user experience on mobile devices.
-- Handle loading and error states during data fetching.
-- Add a shopping cart functionality where users can add products to the cart and view the cart.
+2. Install dependencies:
 
-## Submission Guidelines:
+   ```bash
+   cd frontend-assignment
+   npm install
+   ```
 
-1. Fork this GitHub repository [Assignment Repo](https://github.com/internsathi/frontend-assignment) to your own GitHub account.
-2. Commit your code regularly and push the changes to your forked repository.
-3. Do not create a pull request; just submit your forked repository.
-4. Provide a DOCS.md file with all the technologies used and how to run the program locally.
-5. Once you have completed the assignment, share the repository URL with us via the [submission form](https://forms.gle/G8o13gui7hQR8p39A).
+3. Start the development server:
 
-- Submission Deadline: Thursday, July 6, 2023, 4:00 PM
+   ```bash
+   npm start
+   ```
 
-Check out the discussion section of this repo to ask any related queries or doubts.
-Note: The assignment is intended to help you grasp basic concepts. Don't hesitate to ask for any clarifications in the discussion section of this repo. Good luck with your assignment!
+4. Open your web browser and navigate to [http://localhost:3000](http://localhost:3000) to view the website.
+
+## Project Structure
+
+- `src/`: Contains the source code of the eCommerce website.
+  - `src/components/`: Holds reusable React components.
+  - `src/pages/`: Contains individual pages of the website.
+  - `src/styles/`: Stores CSS or SCSS files for styling.
+- `public/`: Contains public assets such as images or fonts.
+- `README.md`: This file, providing information about the project.
+
+## Features
+
+-Home Page: Display a list of products with their images, names, and prices. Fetch the list from the provided API endpoint.
+-Search Page: Include a search bar where users can input the name of a product. On form submission, display a list of search results (products) fetched from the API endpoint.
+-Product Details Page: When a user clicks on a product from the search results or product list, they should be redirected to a page that displays detailed information about the product, including the product image, name, price, and description.
+
+## Dependencies
+
+ "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.4.0",
+    "bootstrap": "^5.3.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.10.1",
+    "react-query": "^3.39.3",
+    "react-router": "^6.14.1",
+    "react-router-dom": "^6.14.1",
+    "react-scripts": "5.0.1",
+    "sass": "^1.63.6",
+    "web-vitals": "^2.1.4"
+
+
